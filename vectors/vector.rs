@@ -1,4 +1,6 @@
 /*
+ Vectors is a dynamic array, which can grow or shrink in size.
+ Here Vec<T> i a generic type, where T is a type parameter.
  */
 
 fn main(){
@@ -20,4 +22,5 @@ fn main(){
         println!("{}", a);
     }
 
-}
+
+} 
