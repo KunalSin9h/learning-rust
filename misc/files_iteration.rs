@@ -7,12 +7,8 @@ fn main(){
     file
         .lines() // return an iterator, split at \n on a string
         .enumerate()
-        .filter(|(idx, _)| {
-            if idx % 2 == 0 {
-                return true;
-            }
-            return false;
-        })
+        .filter(|(idx, _)| idx % 2 == 0)
+        .skip(2)
+        .take(2)
         .for_each(|tpl| println!("{}", tpl.1));
-
 }
